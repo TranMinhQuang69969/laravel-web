@@ -1,0 +1,472 @@
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+body{
+  min-height: 100vh;
+  width: 100%;
+  background: #c8e8e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  width: 85%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.container .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .content .left-side{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+.content .left-side::before{
+  content: '';
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+.content .left-side .details{
+  margin: 14px;
+  text-align: center;
+}
+.content .left-side .details i{
+  font-size: 30px;
+  color: #3e2093;
+  margin-bottom: 10px;
+}
+.content .left-side .details .topic{
+  font-size: 18px;
+  font-weight: 500;
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+  font-size: 14px;
+  color: #afafb6;
+}
+.container .content .right-side{
+  width: 75%;
+  margin-left: 75px;
+}
+.content .right-side .topic-text{
+  font-size: 23px;
+  font-weight: 600;
+  color: #3e2093;
+}
+.right-side .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.right-side .message-box{
+  min-height: 110px;
+}
+.right-side .input-box textarea{
+  padding-top: 6px;
+}
+.right-side .button{
+  display: inline-block;
+  margin-top: 12px;
+}
+.right-side .button input[type="submit"]{
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #3e2093;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="submit"]:hover{
+  background: #5029bc;
+}
+
+@media (max-width: 950px) {
+  .container{
+    width: 90%;
+    padding: 30px 40px 40px 35px ;
+  }
+  .container .content .right-side{
+   width: 75%;
+   margin-left: 55px;
+}
+}
+@media (max-width: 820px) {
+  .container{
+    margin: 40px 0;
+    height: 100%;
+  }
+  .container .content{
+    flex-direction: column-reverse;
+  }
+ .container .content .left-side{
+   width: 100%;
+   flex-direction: row;
+   margin-top: 40px;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .container .content .left-side::before{
+   display: none;
+ }
+ .container .content .right-side{
+   width: 100%;
+   margin-left: 0;
+ }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200;8..144,300;8..144,400&family=Roboto:wght@100;400;500;700&display=swap');
+:root {
+    --main-color:rgba(221, 221, 221, 0.6);
+    --subtext:'Nunito', sans-serif;
+    --red:#ff5a3c;
+    --light-red:#f9edeb;
+    --blue: #6dbfe2;
+}
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100% ;
+  }
+
+p {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+  
+ol, ul{
+    list-style: none;
+}
+ 
+.row {
+        margin-top: 0 !important;
+        margin-right: 0 !important;
+      
+}
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; 
+    border:none;
+    text-decoration: none;
+    text-transform: none;
+}
+a{
+    font-size: 1.7rem;
+}
+p, i, input, span {
+    font-size: 1.7rem;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+.btn1{
+    height: 40px !important;
+    width: 100px !important;
+    background-color: var(--blue);
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    cursor: pointer; 
+    transition: all 0.5s ease;
+    font-size: 1.5rem;
+}
+.btn1:hover {
+    background-color: tomato;
+    border: none;
+}
+
+/* --------------------HEADER-------------------- */
+
+/* Logo của trang web*/
+.wraper .header-logo img{     
+    height: 30px;
+    width:40px;
+    margin-right:10px ;
+    margin-bottom: 15px;
+  }
+.wraper .header-logo{
+      display: flex;
+      font-weight: bolder;
+      font-size: 2rem;
+      color:#333;
+      align-items: center;
+  }
+
+.wraper .header-logo span{
+      color:var(--red);
+  }
+  .wraper .header-logo p{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: brown; 
+    margin-bottom: 0px !important ;
+  }
+  .wraper .header-logo .font-logo {
+    font-size: 3rem !important;
+  }
+
+/* ==============Đóng Tạo LOGO============= */
+.row-container {
+    display: flex;
+}
+.header-content {
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 3%;
+    display: flex;
+    background-color: #fff;
+    
+}
+/* =============Tao Navbar============== */
+.header-nav{
+        display: flex;
+        align-items: center ;
+}
+a {
+    text-decoration: none !important;
+}
+ul {
+    list-style: none;
+    padding-left: 0rem  ;
+  
+}
+.header-nav .nav-opt{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin-bottom: 0px !important;
+    padding-left:2rem;  
+    
+}
+
+.header-nav>ul>a{
+    display: flex;
+    color: black;
+    font-weight: bold;
+    align-items: center;
+}
+.header-nav>ul>a:hover{
+    color: chocolate;
+}
+.header-nav>ul>li {
+    margin-left: 20px;
+    padding: 10px 0;
+}
+.nav-search {
+    position: relative;
+}
+/* =================TIM KIEM SUB====================== */
+.nav-sub {
+    position: absolute;
+    width: 180px;
+    top: 140%;
+    padding: 10px 10px;
+    left: -15%;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: none;
+}
+.nav-sub ul{
+    padding-left: 0px;
+}
+
+.nav-sub ul li a {
+    color: black;
+}
+.header-nav .nav-search {
+    margin-bottom: 30px;
+}
+.header-nav .nav-search:hover .nav-sub {
+    display: block ;
+    animation: submenu 0.25s linear;
+}
+@keyframes submenu {
+    0%{
+        top: 100px;
+    }
+}
+.nav-sub ul li:hover >a {
+    /* color: var(--red); */
+    color: black;
+}
+.nav-sub ul li:hover {
+    margin-left: 20px;
+    background-color: var(--red);
+
+}
+.nav-sub ul li {
+    transition: all 1s ease;
+    padding: 10px 20px;
+    border-radius: 10px;
+    
+}
+.nav-sub::before {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    content: "";
+    display: block;
+    top: -15px;
+    left: 50px;
+    transform: rotate(45deg);
+    z-index: -10;
+    
+}
+
+
+
+/* ===========Tạo menubar================= */
+.header-content {
+    transition: all 0.3s ease;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.header-content .icons #menu-bars,
+.header-content .icons a{
+    height: 3.5rem;
+    line-height: 3.5rem;
+    width: 4rem;
+    font-size: 3rem;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+    color: var(--red);
+    background: var(--main-color);
+    text-align: center;
+}
+
+.header-content .icons #menu-bars:hover,
+.header-content .icons a:hover{
+    background-color:var(--red);
+    color:#fff;
+}
+
+.header-content .icons #menu-bars{
+    display: none;
+}
+/* ----------------------CARD_PAY------------------------ */
+.card-pay  {
+font-size: 200%;
+}
+.small, small {
+    font-size: -0.125em !;
+}
+
+.card {
+    margin-top: 7rem;
+    position: unset!important ;
+}
+.btn-order {
+    justify-content: center;
+}
+/* ---------------------------------------- */
+.container-profile {
+    margin: 0 15% !important;
+}
+/* -------------------FOOTER----------------- */
+
+footer{
+    background-color: #6dbfe2;
+}
+.container-ft {
+    padding:2rem 9%;
+}
+.row  {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.row .column{
+flex: 1 1 20rem !important;
+margin: 0 40px !important;
+
+}
+
+.row p{
+    color: #333;
+    /* color: #fff; */
+}
+
+.row .column .congthuong {
+width: 50%;
+
+}
+.row .column p{
+    font-size: 16px;
+    
+}
+
+.row .column .add{
+    max-width: 25em;
+}
+
+.row .column .school{
+    max-width: 22em;
+}
+
+.row .column .download .download-tittle{
+    font-size: 18px;
+}
+.row .column .info h2{
+    font-size: 18px;
+}
+.column .dowload1{
+    width: 100%;
+}
+.footer>.container {
+    padding: 2rem 9% !important;
+}

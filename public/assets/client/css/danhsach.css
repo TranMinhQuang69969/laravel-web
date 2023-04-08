@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200;8..144,300;8..144,400&family=Roboto:wght@100;400;500;700&display=swap');
+:root {
+    --main-color:rgba(221, 221, 221, 0.6);
+    --subtext:'Nunito', sans-serif;
+    --red:#ff5a3c;
+    --light-red:#f9edeb;
+    --blue: #6dbfe2;
+}
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+  }
+
+p {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+  
+ol, ul{
+    list-style: none;
+}
+ 
+.row {
+        margin-top: 0 !important;
+        margin-right: 0 !important;
+      
+}
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; 
+    border:none;
+    text-decoration: none;
+    text-transform: none;
+}
+a{
+    font-size: 1.7rem;
+}
+p, i, input, span {
+    font-size: 1.7rem;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+.btn1{
+    height: 40px !important;
+    width: 100px !important;
+    background-color: var(--blue);
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    cursor: pointer; 
+    transition: all 0.5s ease;
+    font-size: 1.5rem;
+}
+.btn1:hover {
+    background-color: tomato;
+    border: none;
+}
+
+
+
+/* ===============HEADER================= */
+
+/* Logo của trang web*/
+.wraper .header-logo img{     
+    height: 30px;
+    width:40px;
+    margin-right:10px ;
+    margin-bottom: 15px;
+  }
+.wraper .header-logo{
+      display: flex;
+      font-weight: bolder;
+      font-size: 2rem;
+      color:#333;
+      align-items: center;
+  }
+
+.wraper .header-logo span{
+      color:var(--red);
+  }
+  .wraper .header-logo p{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: brown; 
+    margin-bottom: 0px !important ;
+  }
+  .wraper .header-logo .font-logo {
+    font-size: 3rem !important;
+  }
+
+/* ==============Đóng Tạo LOGO============= */
+.row-container {
+    display: flex;
+}
+.header-content {
+    justify-content: space-between;
+    align-items: center;
+    position: relative; 
+    /* position: fixed; */
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 3%;
+    display: flex;
+    background-color: #6dbfe2;
+    
+}
+/* =============Tao Navbar============== */
+.header-nav{
+        display: flex;
+        align-items: center ;
+}
+a {
+    text-decoration: none !important;
+}
+ul {
+    list-style: none;
+    padding-left: 0rem  ;
+  
+}
+.header-nav .nav-opt{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin-bottom: 0px !important;
+    padding-left:2rem;  
+    
+}
+
+.header-nav>ul>a{
+    display: flex;
+    color: #fff;
+    font-weight: bold;
+    align-items: center;
+}
+.header-nav>ul>a:hover{
+    color: chocolate;
+}
+.header-nav>ul>li {
+    margin-left: 20px;
+    padding: 10px 0;
+}
+.nav-search {
+    position: relative;
+}
+
+/* ===========Tạo menubar================= */
+.header-content .icons #menu-bars,
+.header-content .icons a{
+    height: 3.5rem;
+    line-height: 3.5rem;
+    width: 4rem;
+    font-size: 3rem;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+    color: var(--red);
+    background: var(--main-color);
+    text-align: center;
+}
+
+.header-content .icons #menu-bars:hover,
+.header-content .icons a:hover{
+    background-color:var(--red);
+    color:#fff;
+}
+
+.header-content .icons #menu-bars{
+    display: none;
+}
+
+
+
+.main-content {
+    position: relative;
+    display: block;
+}

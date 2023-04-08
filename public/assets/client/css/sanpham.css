@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --red:#ff5a3c;
+    --light-red:#f9edeb;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    
+    list-style-type: none;   
+}
+
+html{
+    font-size: 65.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+.container{
+    padding:2rem 9%;
+    /* display: flex; */
+}
+
+body{
+    background:#fff;
+}
+/* .row{
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-between;
+} */
+
+section{
+    padding:2rem 9%;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 3.5rem;
+    border-radius: .5rem;
+    font-size: 1.7rem;
+    color:var(--red);
+    background:var(--light-red);
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.btn:hover{
+    background:var(--red);
+    color:#fff;
+}
+
+/* ===============HEADER================= */
+
+/* Logo của trang web*/
+.wraper .header-logo img{     
+    height: 3022px;
+    width:40px;
+    margin-right:10px ;
+    margin-bottom: 15px;
+  }
+.wraper .header-logo{
+      display: flex;
+      font-weight: bolder;
+      font-size: 2rem;
+      color:#333;
+      align-items: center;
+  }
+
+.wraper .header-logo span{
+      color:var(--red);
+  }
+  .wraper .header-logo p{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: brown; 
+    margin-bottom: 0px !important ;
+  }
+  .wraper .header-logo .font-logo {
+    font-size: 3rem !important;
+  }
+
+/* ==============Đóng Tạo LOGO============= */
+.row-container {
+    display: flex;
+}
+.header-content {
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 3%;
+    display: flex;
+    background-color: #fff;
+    
+}
+/* =============Tao Navbar============== */
+.header-nav{
+        display: flex;
+        align-items: center ;
+}
+a {
+    text-decoration: none !important;
+}
+ul {
+    list-style: none;
+    padding-left: 0rem  ;
+  
+}
+.header-nav .nav-opt{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin-bottom: 0px !important;
+    padding-left:2rem;  
+    
+}
+
+.header-nav>ul>a{
+    display: flex;
+    color: black;
+    font-weight: bold;
+    align-items: center;
+    font-size: 1.7rem;
+}
+.header-nav>ul>a:hover{
+    color: chocolate;
+}
+.header-nav>ul>li {
+    margin-left: 20px;
+    padding: 10px 0;
+}
+.nav-search {
+    position: relative;
+}
+/* =================TIM KIEM SUB====================== */
+.nav-sub {
+    position: absolute;
+    width: 180px;
+    top: 140%;
+    padding: 10px 10px;
+    left: -15%;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: none;
+}
+.nav-sub ul{
+    padding-left: 0px;
+}
+
+.nav-sub ul li a {
+    color: black;
+}
+.header-nav .nav-search {
+    margin-bottom: 30px;
+}
+.header-nav .nav-search:hover .nav-sub {
+    display: block ;
+    animation: submenu 0.25s linear;
+}
+@keyframes submenu {
+    0%{
+        top: 100px;
+    }
+}
+.nav-sub ul li:hover >a {
+    /* color: var(--red); */
+    color: black;
+}
+.nav-sub ul li:hover {
+    margin-left: 20px;
+    background-color: var(--red);
+
+}
+.nav-sub ul li {
+    transition: all 1s ease;
+    padding: 10px 20px;
+    border-radius: 10px;
+    
+}
+.nav-sub::before {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    content: "";
+    display: block;
+    top: -15px;
+    left: 50px;
+    transform: rotate(45deg);
+    z-index: -10;
+    
+}
+
+/* ================Gio hang================= */
+.icon-cart{
+    display: flex;
+    width: 80px;
+    height: 80px;
+    align-items: center;
+
+}
+.icon-cart .cart{
+    font-size: 2.5rem;
+    color:#333;
+    align-items: center;
+    display: inline-block   ;
+}
+
+/* ===========Tạo menubar================= */
+.header-content {
+    transition: all 0.3s ease;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.header-content .icons #menu-bars,
+.header-content .icons a{
+    height: 3.5rem;
+    line-height: 3.5rem;
+    width: 4rem;
+    font-size: 3rem;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+    color: var(--red);
+    background: var(--main-color);
+    text-align: center;
+}
+
+.header-content .icons #menu-bars:hover,
+.header-content .icons a:hover{
+    background-color:var(--red);
+    color:#fff;
+}
+
+.header-content .icons #menu-bars{
+    display: none;
+}
+
+
+
+
+/*--------------------------Sản Phẩm ------------------------*/
+/*.product-info-left {
+    width: 50%;
+    
+}
+.product-info-right {
+    width: 50%;
+}*/
+.product-info-left {
+   
+    margin-top: 15em;
+    margin-left: 0em;
+    flex: 1 1 30rem;
+    
+    overflow:hidden;
+    
+}
+
+
+
+.product-info-left img {  
+    width: 100%; 
+    border: 0.1rem solid rgba(0,0,0,.2);
+    box-shadow: 1.5rem 1.5rem rgb(0 0 0 / 10%);
+    border-radius: 0.5rem;
+   
+}
+
+.product-info-right {
+    margin-left: 2em;
+    margin-top: 15rem;
+    flex: 1 1 50rem;
+    overflow-x:hidden;
+    
+
+}
+
+.product-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+.product-info-right-product-name{
+    font-size: 28px;
+}
+.product-info-right-product-address{
+    font-size: 15px;
+}
+.product-info-right-product-price {
+    font-size: 22px;
+}
+.product-info-right-product-note p{
+    font-size: 20px;
+}
+.product-info-right-product-convenient li{
+    font-size: 20px;
+}
+
+.product-info-right-product-convenient p{
+    font-size: 20px;
+}
+.product-info-right-product-phone-number {
+    font-size: 19px;
+}
+
+
+/*-----------------------Button_Product-------------------------------*/
+.product-info .btn {
+
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #46aaee;
+    color: #f7f7f7;
+    
+}
+.product-info .btn:hover{
+    background-color: tomato;
+}
+
+
+
+
+/*------------------------Danh sách khác---------------------------- */
+.product-other {
+    
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.product-other li {
+    border: 0.1rem solid rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    overflow:hidden;
+    flex-basis: 22%;
+    overflow-x: hidden;
+    margin-bottom: 2em;
+    flex: 1 1 20rem;
+    
+}
+.product-other-thumb{
+    display: flex;
+}
+
+.product-other li img {
+    max-width: 100%;
+    height: auto;
+    flex: 1;
+}
+
+.product-other-item{
+    padding-bottom: 3em;
+    
+}
+
+
+
+.product-other-info .product-other-price {
+    color: #FF6600;
+    padding: 3px 0px;
+    font-size: 24px;
+    margin-left: 1.2em;
+    font-weight: bold;
+    
+
+}
+
+.product-other-info {
+    padding: 15px 0px;
+
+}
+.product-other-info .product-other-cat {
+    font-size: 1.7em;
+    color:#333;
+    margin-left: 1.5em;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.product-other-info .add{
+    font-size: 16px;
+    margin-left: 1.5em;
+    max-width: 15em;
+
+}
+
+.product-other-info .add a{
+    color: #666;
+}
+
+.product-other-item .product-other-top .inf{
+    
+    top:1rem; left:0;
+    display: flex;
+}
+
+.product-other-item .product-other-top .info h3{
+    font-weight: 500;
+    font-size: 1.4rem;
+    color:#fff;
+    background:rgba(0,0,0,.3);
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    margin-left: 1rem;
+}
+
+/*--------------Button_Other_List-------------*/
+.product-other{
+    
+    flex-wrap: wrap;
+}
+/* .product-other li{
+    flex: 1 1 30rem;
+}
+.product-other-item{
+    flex: 1 1 30rem;
+} */
+.product-other-item .btn{
+    background-color: #5db6f2;
+    padding: 10px 20px;
+    color: white;
+    
+    
+}
+.product-other-item .btn-view{
+    justify-content: center;
+    display: flex;
+}
+
+.product-other-item .btn:hover{
+    
+    background-color: tomato;
+    
+}
+
+
+.details{
+    margin-left: 1em;
+    margin-right: 1em;
+    padding:.5rem 0;
+    display: flex;
+}
+.details h3 sup{
+    color: #999;
+}
+.details h3{
+    flex:1;
+    padding:1rem;
+    border:.1rem solid rgba(0,0,0,.1);
+    color:#999;
+    font-size: 14px;
+}
+.details h3 i{
+    color:#333;
+    padding-left: .5rem;
+}
+
+/*------------------------footer------------------*/
+footer{
+    background-color: #6dbfe2;
+    margin-top: 8rem;
+}
+footer > .row{
+    padding-top: 6rem;
+}
+.row  {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  
+}
+
+.row .column{
+   flex: 1 1 20rem;
+   margin: 0 40px;
+   
+}
+
+.row p{
+    color: #333;
+}
+
+.row .column .congthuong {
+  width: 50%;
+  
+}
+.row .column p{
+    font-size: 16px;
+    
+}
+
+.row .column .add{
+    max-width: 25em;
+}
+
+.row .column .school{
+    max-width: 22em;
+}
+
+.row .column .download .download-tittle{
+    font-size: 18px;
+}
+
+
+.row .column .info h2{
+    font-size: 18px;
+}
+.column .dowload1{
+    width: 100%;
+}
+
+
+
+
+@media (max-width:768px){
+    .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    section{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .header-top .fa-heart {
+        display: none;
+   }
+    .product-other{
+        margin: 10px 5%;
+    }
+    .product-info-left {
+        width: 100%;
+    }
+    .product-info-right{
+        width: 100%;
+    }
+    .product-other li{
+        width: 100%;
+    }
+    
+    footer .column{
+        width: 100%;
+        margin-left: 0;
+    }
+    .column .dowload1{
+        width: 100%;
+    }
+    .column{
+        width: 100%;
+    }
+    
+}
+
+@media  (max-width: 924px) {
+
+    .header-top .icons #menu-bars{
+        display: inline-block;
+    }
+
+    .header-top .navbar{
+        position: absolute;
+        left:0; right:0; top:100%;
+        background:#f7f7f7;
+        border-top: .1rem solid #333;
+        border-bottom: .1rem solid #333;
+        transition: .2s linear;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+     .header-top .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .header-top .navbar a{
+        display: block;
+        padding:1.5rem;
+        margin:1.5rem;
+        background:#fff;
+        border:.1rem solid #333;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        border-radius: .5rem;
+    }
+
+}
